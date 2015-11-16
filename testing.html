@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> Empty page for testing</title>
+</head>
+<body>
+
+<script src="day_counting.js"> </script>
+<script>
+var months = [ "jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec" ];
+var days_month = { jan:31, feb:28, mar:31, apr:30, may:31, jun:30, jul:31, aug:31, sep:30,  oct:31, nov:30, dec:31};
+var centuries = [1000,1001,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000, 2001, 2004, 2010];
+var year;
+
+document.write("<p>My First JavaScript</p>");
+var i;
+
+for ( var n = 0; n < months.length; n++ ) {
+	document.writeln(months[n], days_month[months[n]] );
+
+}
+
+for (var i=0; i< centuries.length; i++ ) {
+	year=centuries[i];
+	if (is_a_leap_year(year)) {
+		document.write("<p>" + year + " is a leap year. </p>");
+	} else {
+		document.write("<p>" + year + " is a not leap year. </p>");
+	}
+}
+
+
+</script>
+
+</body>
+</html>
