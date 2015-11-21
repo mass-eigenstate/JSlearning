@@ -29,8 +29,14 @@ for (var i=0; i< centuries.length; i++ ) {
 		document.write("<p>" + year + " is a not leap year. </p>");
 	}
 }
-
-
+var t = new Date(2015,0,24);
+document.write("<p>" +t+" is day " + day_of_year(t)+" of the year.</p>");
+t = new Date(2015,11,31);
+document.write("<p>" +t+" is day " + day_of_year(t)+" of the year.</p>");
+t = new Date(2016,2,1);
+document.write("<p>" +t+" is day " + day_of_year(t)+" of the year.</p>");
+t = new Date(2015,2,1);
+document.write("<p>" +t+" is day " + day_of_year(t)+" of the year.</p>");
 </script>
 
 </body>
